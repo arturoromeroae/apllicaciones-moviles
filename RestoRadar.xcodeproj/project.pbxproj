@@ -1,0 +1,774 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CE319CF42AD244B000745A53 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = CE319CF32AD244B000745A53 /* FirebaseAuth */; };
+		CE319CF62AD244B000745A53 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = CE319CF52AD244B000745A53 /* FirebaseFirestore */; };
+		CE319CF82AD244B000745A53 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = CE319CF72AD244B000745A53 /* FirebaseStorage */; };
+		CE319CFB2AD3259C00745A53 /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = CE319CFA2AD3259C00745A53 /* GoogleSignIn */; };
+		CE319CFD2AD3259C00745A53 /* GoogleSignInSwift in Frameworks */ = {isa = PBXBuildFile; productRef = CE319CFC2AD3259C00745A53 /* GoogleSignInSwift */; };
+		CE319D012AD32A4500745A53 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CE319D002AD32A4500745A53 /* GoogleService-Info.plist */; };
+		CE5A56482ADB02E2008CC1D2 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5A56472ADB02E2008CC1D2 /* Utilities.swift */; };
+		CE5A564B2ADB088F008CC1D2 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5A564A2ADB088F008CC1D2 /* MapView.swift */; };
+		CE5A564F2ADB4BA0008CC1D2 /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5A564E2ADB4BA0008CC1D2 /* MainTabView.swift */; };
+		CE5A56532ADB5650008CC1D2 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5A56522ADB5650008CC1D2 /* HomeView.swift */; };
+		CE5A56552ADB588A008CC1D2 /* TabbedItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5A56542ADB588A008CC1D2 /* TabbedItems.swift */; };
+		CE5A60342ADD9FBF00235C68 /* RectangleWithInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5A60332ADD9FBF00235C68 /* RectangleWithInfo.swift */; };
+		CE6B7E492AC9DA4F0020AD70 /* RestoRadarApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6B7E482AC9DA4F0020AD70 /* RestoRadarApp.swift */; };
+		CE6B7E4B2AC9DA4F0020AD70 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6B7E4A2AC9DA4F0020AD70 /* ContentView.swift */; };
+		CE6B7E4D2AC9DA510020AD70 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE6B7E4C2AC9DA510020AD70 /* Assets.xcassets */; };
+		CE6B7E502AC9DA510020AD70 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE6B7E4F2AC9DA510020AD70 /* Preview Assets.xcassets */; };
+		CE6B7E5A2AC9DA510020AD70 /* RestoRadarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6B7E592AC9DA510020AD70 /* RestoRadarTests.swift */; };
+		CE6B7E642AC9DA510020AD70 /* RestoRadarUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6B7E632AC9DA510020AD70 /* RestoRadarUITests.swift */; };
+		CE6B7E662AC9DA510020AD70 /* RestoRadarUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6B7E652AC9DA510020AD70 /* RestoRadarUITestsLaunchTests.swift */; };
+		CE6B7E772AC9DBCA0020AD70 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6B7E762AC9DBCA0020AD70 /* LoginView.swift */; };
+		CE6B7E7A2AC9DC580020AD70 /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6B7E792AC9DC580020AD70 /* CircleImage.swift */; };
+		CE6B7E7C2AC9DE860020AD70 /* AuthTextModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6B7E7B2AC9DE860020AD70 /* AuthTextModifier.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CE6B7E562AC9DA510020AD70 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CE6B7E3D2AC9DA4F0020AD70 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CE6B7E442AC9DA4F0020AD70;
+			remoteInfo = RestoRadar;
+		};
+		CE6B7E602AC9DA510020AD70 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CE6B7E3D2AC9DA4F0020AD70 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CE6B7E442AC9DA4F0020AD70;
+			remoteInfo = RestoRadar;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CE319D002AD32A4500745A53 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		CE319D022AD32C8E00745A53 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		CE5A56472ADB02E2008CC1D2 /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
+		CE5A564A2ADB088F008CC1D2 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		CE5A564E2ADB4BA0008CC1D2 /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
+		CE5A56522ADB5650008CC1D2 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		CE5A56542ADB588A008CC1D2 /* TabbedItems.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbedItems.swift; sourceTree = "<group>"; };
+		CE5A60332ADD9FBF00235C68 /* RectangleWithInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RectangleWithInfo.swift; sourceTree = "<group>"; };
+		CE6B7E452AC9DA4F0020AD70 /* RestoRadar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RestoRadar.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE6B7E482AC9DA4F0020AD70 /* RestoRadarApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestoRadarApp.swift; sourceTree = "<group>"; };
+		CE6B7E4A2AC9DA4F0020AD70 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		CE6B7E4C2AC9DA510020AD70 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CE6B7E4F2AC9DA510020AD70 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		CE6B7E552AC9DA510020AD70 /* RestoRadarTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RestoRadarTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE6B7E592AC9DA510020AD70 /* RestoRadarTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestoRadarTests.swift; sourceTree = "<group>"; };
+		CE6B7E5F2AC9DA510020AD70 /* RestoRadarUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RestoRadarUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE6B7E632AC9DA510020AD70 /* RestoRadarUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestoRadarUITests.swift; sourceTree = "<group>"; };
+		CE6B7E652AC9DA510020AD70 /* RestoRadarUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestoRadarUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		CE6B7E762AC9DBCA0020AD70 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		CE6B7E792AC9DC580020AD70 /* CircleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImage.swift; sourceTree = "<group>"; };
+		CE6B7E7B2AC9DE860020AD70 /* AuthTextModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthTextModifier.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CE6B7E422AC9DA4F0020AD70 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE319CFD2AD3259C00745A53 /* GoogleSignInSwift in Frameworks */,
+				CE319CF42AD244B000745A53 /* FirebaseAuth in Frameworks */,
+				CE319CFB2AD3259C00745A53 /* GoogleSignIn in Frameworks */,
+				CE319CF62AD244B000745A53 /* FirebaseFirestore in Frameworks */,
+				CE319CF82AD244B000745A53 /* FirebaseStorage in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE6B7E522AC9DA510020AD70 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE6B7E5C2AC9DA510020AD70 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CE5A56462ADB02C0008CC1D2 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				CE5A56472ADB02E2008CC1D2 /* Utilities.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		CE5A56492ADB086D008CC1D2 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				CE5A564E2ADB4BA0008CC1D2 /* MainTabView.swift */,
+				CE5A56542ADB588A008CC1D2 /* TabbedItems.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		CE5A56502ADB55C5008CC1D2 /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				CE5A564A2ADB088F008CC1D2 /* MapView.swift */,
+			);
+			path = Map;
+			sourceTree = "<group>";
+		};
+		CE5A56512ADB5633008CC1D2 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				CE5A56522ADB5650008CC1D2 /* HomeView.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		CE6B7E3C2AC9DA4F0020AD70 = {
+			isa = PBXGroup;
+			children = (
+				CE6B7E472AC9DA4F0020AD70 /* RestoRadar */,
+				CE6B7E582AC9DA510020AD70 /* RestoRadarTests */,
+				CE6B7E622AC9DA510020AD70 /* RestoRadarUITests */,
+				CE6B7E462AC9DA4F0020AD70 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CE6B7E462AC9DA4F0020AD70 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CE6B7E452AC9DA4F0020AD70 /* RestoRadar.app */,
+				CE6B7E552AC9DA510020AD70 /* RestoRadarTests.xctest */,
+				CE6B7E5F2AC9DA510020AD70 /* RestoRadarUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CE6B7E472AC9DA4F0020AD70 /* RestoRadar */ = {
+			isa = PBXGroup;
+			children = (
+				CE319D022AD32C8E00745A53 /* Info.plist */,
+				CE6B7E742AC9DAA30020AD70 /* ViewModel */,
+				CE6B7E732AC9DA6B0020AD70 /* Model */,
+				CE5A56462ADB02C0008CC1D2 /* Utilities */,
+				CE6B7E722AC9DA630020AD70 /* View */,
+				CE6B7E482AC9DA4F0020AD70 /* RestoRadarApp.swift */,
+				CE6B7E4A2AC9DA4F0020AD70 /* ContentView.swift */,
+				CE319D002AD32A4500745A53 /* GoogleService-Info.plist */,
+				CE6B7E4C2AC9DA510020AD70 /* Assets.xcassets */,
+				CE6B7E4E2AC9DA510020AD70 /* Preview Content */,
+			);
+			path = RestoRadar;
+			sourceTree = "<group>";
+		};
+		CE6B7E4E2AC9DA510020AD70 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				CE6B7E4F2AC9DA510020AD70 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		CE6B7E582AC9DA510020AD70 /* RestoRadarTests */ = {
+			isa = PBXGroup;
+			children = (
+				CE6B7E592AC9DA510020AD70 /* RestoRadarTests.swift */,
+			);
+			path = RestoRadarTests;
+			sourceTree = "<group>";
+		};
+		CE6B7E622AC9DA510020AD70 /* RestoRadarUITests */ = {
+			isa = PBXGroup;
+			children = (
+				CE6B7E632AC9DA510020AD70 /* RestoRadarUITests.swift */,
+				CE6B7E652AC9DA510020AD70 /* RestoRadarUITestsLaunchTests.swift */,
+			);
+			path = RestoRadarUITests;
+			sourceTree = "<group>";
+		};
+		CE6B7E722AC9DA630020AD70 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CE5A56512ADB5633008CC1D2 /* Home */,
+				CE5A56502ADB55C5008CC1D2 /* Map */,
+				CE5A56492ADB086D008CC1D2 /* Main */,
+				CE6B7E782AC9DC430020AD70 /* Components */,
+				CE6B7E752AC9DB720020AD70 /* Authentication */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CE6B7E732AC9DA6B0020AD70 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CE6B7E742AC9DAA30020AD70 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		CE6B7E752AC9DB720020AD70 /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				CE6B7E762AC9DBCA0020AD70 /* LoginView.swift */,
+				CE6B7E7B2AC9DE860020AD70 /* AuthTextModifier.swift */,
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
+		CE6B7E782AC9DC430020AD70 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				CE6B7E792AC9DC580020AD70 /* CircleImage.swift */,
+				CE5A60332ADD9FBF00235C68 /* RectangleWithInfo.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CE6B7E442AC9DA4F0020AD70 /* RestoRadar */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE6B7E692AC9DA510020AD70 /* Build configuration list for PBXNativeTarget "RestoRadar" */;
+			buildPhases = (
+				CE6B7E412AC9DA4F0020AD70 /* Sources */,
+				CE6B7E422AC9DA4F0020AD70 /* Frameworks */,
+				CE6B7E432AC9DA4F0020AD70 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RestoRadar;
+			packageProductDependencies = (
+				CE319CF32AD244B000745A53 /* FirebaseAuth */,
+				CE319CF52AD244B000745A53 /* FirebaseFirestore */,
+				CE319CF72AD244B000745A53 /* FirebaseStorage */,
+				CE319CFA2AD3259C00745A53 /* GoogleSignIn */,
+				CE319CFC2AD3259C00745A53 /* GoogleSignInSwift */,
+			);
+			productName = RestoRadar;
+			productReference = CE6B7E452AC9DA4F0020AD70 /* RestoRadar.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CE6B7E542AC9DA510020AD70 /* RestoRadarTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE6B7E6C2AC9DA510020AD70 /* Build configuration list for PBXNativeTarget "RestoRadarTests" */;
+			buildPhases = (
+				CE6B7E512AC9DA510020AD70 /* Sources */,
+				CE6B7E522AC9DA510020AD70 /* Frameworks */,
+				CE6B7E532AC9DA510020AD70 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CE6B7E572AC9DA510020AD70 /* PBXTargetDependency */,
+			);
+			name = RestoRadarTests;
+			productName = RestoRadarTests;
+			productReference = CE6B7E552AC9DA510020AD70 /* RestoRadarTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CE6B7E5E2AC9DA510020AD70 /* RestoRadarUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE6B7E6F2AC9DA510020AD70 /* Build configuration list for PBXNativeTarget "RestoRadarUITests" */;
+			buildPhases = (
+				CE6B7E5B2AC9DA510020AD70 /* Sources */,
+				CE6B7E5C2AC9DA510020AD70 /* Frameworks */,
+				CE6B7E5D2AC9DA510020AD70 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CE6B7E612AC9DA510020AD70 /* PBXTargetDependency */,
+			);
+			name = RestoRadarUITests;
+			productName = RestoRadarUITests;
+			productReference = CE6B7E5F2AC9DA510020AD70 /* RestoRadarUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CE6B7E3D2AC9DA4F0020AD70 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					CE6B7E442AC9DA4F0020AD70 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					CE6B7E542AC9DA510020AD70 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = CE6B7E442AC9DA4F0020AD70;
+					};
+					CE6B7E5E2AC9DA510020AD70 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = CE6B7E442AC9DA4F0020AD70;
+					};
+				};
+			};
+			buildConfigurationList = CE6B7E402AC9DA4F0020AD70 /* Build configuration list for PBXProject "RestoRadar" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CE6B7E3C2AC9DA4F0020AD70;
+			packageReferences = (
+				CE319CF22AD244B000745A53 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				CE319CF92AD3259C00745A53 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */,
+			);
+			productRefGroup = CE6B7E462AC9DA4F0020AD70 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CE6B7E442AC9DA4F0020AD70 /* RestoRadar */,
+				CE6B7E542AC9DA510020AD70 /* RestoRadarTests */,
+				CE6B7E5E2AC9DA510020AD70 /* RestoRadarUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CE6B7E432AC9DA4F0020AD70 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE6B7E502AC9DA510020AD70 /* Preview Assets.xcassets in Resources */,
+				CE6B7E4D2AC9DA510020AD70 /* Assets.xcassets in Resources */,
+				CE319D012AD32A4500745A53 /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE6B7E532AC9DA510020AD70 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE6B7E5D2AC9DA510020AD70 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CE6B7E412AC9DA4F0020AD70 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE5A56532ADB5650008CC1D2 /* HomeView.swift in Sources */,
+				CE5A564B2ADB088F008CC1D2 /* MapView.swift in Sources */,
+				CE5A56552ADB588A008CC1D2 /* TabbedItems.swift in Sources */,
+				CE5A56482ADB02E2008CC1D2 /* Utilities.swift in Sources */,
+				CE6B7E772AC9DBCA0020AD70 /* LoginView.swift in Sources */,
+				CE5A564F2ADB4BA0008CC1D2 /* MainTabView.swift in Sources */,
+				CE6B7E7A2AC9DC580020AD70 /* CircleImage.swift in Sources */,
+				CE5A60342ADD9FBF00235C68 /* RectangleWithInfo.swift in Sources */,
+				CE6B7E4B2AC9DA4F0020AD70 /* ContentView.swift in Sources */,
+				CE6B7E7C2AC9DE860020AD70 /* AuthTextModifier.swift in Sources */,
+				CE6B7E492AC9DA4F0020AD70 /* RestoRadarApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE6B7E512AC9DA510020AD70 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE6B7E5A2AC9DA510020AD70 /* RestoRadarTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE6B7E5B2AC9DA510020AD70 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE6B7E642AC9DA510020AD70 /* RestoRadarUITests.swift in Sources */,
+				CE6B7E662AC9DA510020AD70 /* RestoRadarUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CE6B7E572AC9DA510020AD70 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CE6B7E442AC9DA4F0020AD70 /* RestoRadar */;
+			targetProxy = CE6B7E562AC9DA510020AD70 /* PBXContainerItemProxy */;
+		};
+		CE6B7E612AC9DA510020AD70 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CE6B7E442AC9DA4F0020AD70 /* RestoRadar */;
+			targetProxy = CE6B7E602AC9DA510020AD70 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		CE6B7E672AC9DA510020AD70 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CE6B7E682AC9DA510020AD70 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CE6B7E6A2AC9DA510020AD70 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"RestoRadar/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = RestoRadar/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = RestoRadar;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = pe.cibertec.edu.RestoRadar;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		CE6B7E6B2AC9DA510020AD70 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"RestoRadar/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = RestoRadar/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = RestoRadar;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = pe.cibertec.edu.RestoRadar;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		CE6B7E6D2AC9DA510020AD70 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = pe.cibertec.edu.RestoRadarTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RestoRadar.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/RestoRadar";
+			};
+			name = Debug;
+		};
+		CE6B7E6E2AC9DA510020AD70 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = pe.cibertec.edu.RestoRadarTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RestoRadar.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/RestoRadar";
+			};
+			name = Release;
+		};
+		CE6B7E702AC9DA510020AD70 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = pe.cibertec.edu.RestoRadarUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = RestoRadar;
+			};
+			name = Debug;
+		};
+		CE6B7E712AC9DA510020AD70 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = pe.cibertec.edu.RestoRadarUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = RestoRadar;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CE6B7E402AC9DA4F0020AD70 /* Build configuration list for PBXProject "RestoRadar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE6B7E672AC9DA510020AD70 /* Debug */,
+				CE6B7E682AC9DA510020AD70 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CE6B7E692AC9DA510020AD70 /* Build configuration list for PBXNativeTarget "RestoRadar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE6B7E6A2AC9DA510020AD70 /* Debug */,
+				CE6B7E6B2AC9DA510020AD70 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CE6B7E6C2AC9DA510020AD70 /* Build configuration list for PBXNativeTarget "RestoRadarTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE6B7E6D2AC9DA510020AD70 /* Debug */,
+				CE6B7E6E2AC9DA510020AD70 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CE6B7E6F2AC9DA510020AD70 /* Build configuration list for PBXNativeTarget "RestoRadarUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE6B7E702AC9DA510020AD70 /* Debug */,
+				CE6B7E712AC9DA510020AD70 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		CE319CF22AD244B000745A53 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.0.0;
+			};
+		};
+		CE319CF92AD3259C00745A53 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/google/GoogleSignIn-iOS";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		CE319CF32AD244B000745A53 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CE319CF22AD244B000745A53 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		CE319CF52AD244B000745A53 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CE319CF22AD244B000745A53 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		CE319CF72AD244B000745A53 /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CE319CF22AD244B000745A53 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
+		};
+		CE319CFA2AD3259C00745A53 /* GoogleSignIn */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CE319CF92AD3259C00745A53 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;
+			productName = GoogleSignIn;
+		};
+		CE319CFC2AD3259C00745A53 /* GoogleSignInSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CE319CF92AD3259C00745A53 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;
+			productName = GoogleSignInSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = CE6B7E3D2AC9DA4F0020AD70 /* Project object */;
+}
